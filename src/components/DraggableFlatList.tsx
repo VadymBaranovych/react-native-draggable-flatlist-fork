@@ -267,7 +267,7 @@ function DraggableFlatListInner<T>(props: DraggableFlatListProps<T>) {
     .onBegin((evt) => {
       gestureDisabled.value = disabled.value;
       if (gestureDisabled.value) return;
-      panGestureState.value = evt.state;
+      // panGestureState.value = evt.state;
     })
     .onUpdate((evt) => {
       if (gestureDisabled.value) return;
